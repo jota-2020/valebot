@@ -901,7 +901,7 @@ this.sendPresenceUpdate('recording', m.chat)
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
 if (chat.audios && m.text.match(/(hola|wenas|buena|oa|ola)/gi)) {    
-let vn = './st/67b4245f-4de9-46dd-8d09-35e829aa0c9f.webp'
+let vn = './st/kawaii-emotewolf.gif'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
