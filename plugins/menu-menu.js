@@ -56,19 +56,10 @@ ${readMore}
 🍁᭢━━━━━━━━━᭥🍁᭢
 ╭─「❥*𝕀ℕ𝔽𝕆 𝔹𝕆𝕋*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 💟 _${usedPrefix}terminosycondiciones_
-┣ ඬ⃟ 💟 _${usedPrefix}grupos_
 ┣ ඬ⃟ 💟 _${usedPrefix}estado_
-┣ ඬ⃟ 💟 _${usedPrefix}infobot_
 ┣ ඬ⃟ 💟 _${usedPrefix}labiblia_
 ┣ ඬ⃟ 💟 _${usedPrefix}animes_
-┣ ඬ⃟ 💟 _${usedPrefix}speedtest_
-┣ ඬ⃟ 💟 _${usedPrefix}donar_
-┣ ඬ⃟ 💟 _${usedPrefix}grouplist_
-┣ ඬ⃟ 💟 _${usedPrefix}owner_
-┣ ඬ⃟ 💟 _${usedPrefix}script_
-┣ ඬ⃟ 💟 _${usedPrefix}listprem_
-┣ ඬ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+
 ┗━━━━━━━━━━━━━━━━┛
 
 🍁᭢━━━━━━━━━᭥🍁᭢
