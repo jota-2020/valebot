@@ -30,5 +30,5 @@ async function getOpenAIChatCompletion(texto) {
 let respuesta = await getOpenAIChatCompletion(text)
 m.reply(respuesta)
 }
-handler.command = /^(bot|elmo|simsimi|simisimi)$/i
+handler.command = /^(vale|valeria)$/i
 export default handler
