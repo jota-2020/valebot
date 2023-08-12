@@ -52,4 +52,4 @@ _- Si todavía tienes alguna duda o reclamo de lo mencionado aqui o referente al
 > Bruno Sobrino 
 > Correo electronico: theshadowbrokers133@gmailcom
 
-*∆ THE MYSTIC - BOT - MD ∆*`
+*∆ THE MYSTIC - BOT - MD ∆*` */
