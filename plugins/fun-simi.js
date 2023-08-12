@@ -1,6 +1,6 @@
 import fetch from "node-fetch"
 let handler = async (m, { conn, text }) => {  
-let sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text())
+let sistema1 = await fetch(`https://raw.githubusercontent.com/jota-2020/valebot/main/st/perso.txt`).then(v => v.text())
 
 async function getOpenAIChatCompletion(texto) {
   const openaiAPIKey = global.openai_key
@@ -30,5 +30,5 @@ async function getOpenAIChatCompletion(texto) {
 let respuesta = await getOpenAIChatCompletion(text)
 m.reply(respuesta)
 }
-handler.command = /^(vale|valeria)$/i
+handler.command = /^(vale_ia|valeria)$/i
 export default handler
