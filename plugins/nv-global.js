@@ -1073,7 +1073,12 @@ this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt
 if (chat.audios && m.text.match(/(pack)/gi)) {    
 let vn = './st/ahegao1.webp'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
+
+if (chat.audios && m.text.match(/(roba)/gi)) {    
+let vn = './st/robar.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
     
 return !0 }
 export default handler
