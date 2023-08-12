@@ -1079,6 +1079,11 @@ if (chat.audios && m.text.match(/(roba)/gi)) {
 let vn = './st/robar.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
+
+if (chat.audios && m.text.match(/(:3|:o|:O|:0|>:3|qwq|awa|ewe)/gi)) {    
+let vn = './st/emo3.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
     
 return !0 }
 export default handler
