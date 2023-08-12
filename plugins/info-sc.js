@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix }) => {
+/*let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `*https://github.com/BrunoSobrino/TheMystic-Bot-MD*`
@@ -28,4 +28,4 @@ let buttonMessage= {
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 handler.command = ['sc','script']
-export default handler
+export default handler*/
