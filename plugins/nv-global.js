@@ -900,7 +900,7 @@ let vn = './st/15775cfe-0c4d-4fed-8ba3-ade6131c0883.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (chat.audios && m.text.match(/(hola|wenas|wena|oa|hello|hi|ola|buena|)/gi)) {    
+if (chat.audios && m.text.match(/(hola|wenas|buena|oa|ola)/gi)) {    
 let vn = './st/67b4245f-4de9-46dd-8d09-35e829aa0c9f.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
