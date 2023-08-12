@@ -6,4 +6,4 @@ await m.reply( '*—◉ 𝙰𝚀𝚄𝙸 𝚃𝙸𝙴𝙽𝙴𝚂 𝙻𝙰 𝙻�
 await m.reply(replyMessage.trim())}
 handler.command = handler.help = ['listjadibot','bots','subsbots']
 handler.tags = ['jadibot']
-export default handler
+export default handler*/
