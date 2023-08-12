@@ -885,11 +885,26 @@ let vn = './st/2a332ffc-a34f-4a5c-87d9-6e04a9e8e0d4.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (chat.audios && m.text.match(/(jaja|gracioso)/gi)) {    
+if (chat.audios && m.text.match(/(jaja|jiji)/gi)) {    
 let vn = './st/75cf9f9c-01bc-497c-8557-6ac966c913c8.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
+if (chat.audios && m.text.match(/(gracioso|risa|hih)/gi)) {    
+let vn = './st/j1.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(jsjs|jeje|heh)/gi)) {    
+let vn = './st/j2.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(jasj|hah)/gi)) {    
+let vn = './st/j3.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+    
 if (chat.audios && m.text.match(/(maricon)/gi)) {    
 let vn = './st/6c4c3326-7e85-43b6-bcae-31c968e466d9.webp'
 this.sendPresenceUpdate('recording', m.chat)   
@@ -1027,6 +1042,36 @@ this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt
 
 if (chat.audios && m.text.match(/(denme admin|dame adm|dame admin|quiero admin|quiero adm|ponme admin| ponme adm|quiero adm|quiero admin)/gi)) {    
 let vn = './media/0c75b472-6561-416b-8c80-f5554cb4e9cb.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+
+if (chat.audios && m.text.match(/(foto teta)/gi)) {    
+let vn = './st/ftt1.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+
+if (chat.audios && m.text.match(/(fototeta)/gi)) {    
+let vn = './st/ftt2.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+
+if (chat.audios && m.text.match(/(tetas|ttas)/gi)) {    
+let vn = './st/ftt3.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+
+if (chat.audios && m.text.match(/(nude)/gi)) {    
+let vn = './st/nd1.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+
+if (chat.audios && m.text.match(/(send nudes|manda nude)/gi)) {    
+let vn = './st/nd2.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
+
+if (chat.audios && m.text.match(/(pack)/gi)) {    
+let vn = './st/ahegao1.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
     
