@@ -1045,12 +1045,12 @@ let vn = './media/0c75b472-6561-416b-8c80-f5554cb4e9cb.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
 
-if (chat.audios && m.text.match(/(foto teta|pechugas|mamas|lolas)/gi)) {    
+if (chat.audios && m.text.match(/(foto teta|pechugas|mamas|lolas|pecho)/gi)) {    
 let vn = './st/ftt1.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
 
-if (chat.audios && m.text.match(/(fototeta|chichi|senos)/gi)) {    
+if (chat.audios && m.text.match(/(fototeta|chichi|senos|bubi)/gi)) {    
 let vn = './st/ftt2.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
