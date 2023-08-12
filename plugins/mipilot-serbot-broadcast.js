@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix, text }) => {
+/*let handler = async (m, { conn, usedPrefix, text }) => {
     if (conn.user.jid !== global.conn.user.jid) throw false
     let users = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user.jid)])]
     let cc = text ? m : m.quoted ? await m.getQuotedObj() : false || m
