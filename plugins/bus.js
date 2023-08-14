@@ -8,7 +8,7 @@ let url = 'https://busqueda.turbus.cl/Turbusqueda-war/centerzone.jsp?zone=3&idbu
 let search = await googleIt(text)
 let msg = search.articles.map(({ title, url, description }) => { return `*${title}*\n_${url}_\n_${description}_` }).join('\n\n')
 try {
-let ss = `https://image.thum.io/get/width/1200/crop/600/${url}`
+let ss = `https://image.thum.io/get/width/1200/crop/800/${url}`
 await conn.sendFile(m.chat, ss, 'error.png', url + '\n\n' + msg, m)
 } catch {
 m.reply(msg)
