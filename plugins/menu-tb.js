@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return    
 try {
-let pp = imagen4
+//let pp = imagen4
 //let vn = './media/menu.mp3'
 let img =  './menutb.jpg'
 let d = new Date(new Date + 3600000)
