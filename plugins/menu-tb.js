@@ -20,29 +20,23 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `*╭━━❍TURBUS- Bσƚ❍━━╮* 
+let str = `*╭━━TURBUS- BOT━━╮* 
  *┃ ╭━━━━━━━━━━━━━━━━╮* 
  *┃ ┃ ╭┈────────────╮* 
  *┃ ┃ │❍ 🅼🅴🅽🆄 ❍* 
  *┃ ┃ ╰┈────────────╯* 
  *┃ ╰━━━━━━━━━━━━━━━━╯* 
  *┣━━━▢ ʙᴜᴇɴᴀꜱ, ${taguser}*• 
- *┃╭━━━━━━━━━━━━━━━━╾•* 
- *┃┃  ❍ ${vs} ❍* 
  *┃┣━━━━━━━━━━━━━━━━╾•* 
  *┃┃ ⋄ ᴄʀᴇᴀᴅᴏʀ ᴅᴇʟ ʙᴏᴛ:  jotah1313* 
  *┃┃ ⋄ ꜰᴇᴄʜᴀ » ${date}* 
- *┃┃ ⋄ ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ » ${uptime}* 
- *┃┃ ⋄ ʟᴇɴɢᴜᴀᴊᴇ » ꜱᴘᴀɴɪꜱʜ* 
- *┃┃ ⋄ ᴜꜱᴜᴀʀɪᴏꜱ » ${rtotalreg}* 
  *┃╰━━━━━━━━━━━━━━━━╾•* 
  *╰━━━╼TURBUS BOT╾━━━╯* 
  *╭━━━━━━━━━━━━━━━━╮*
 ┣ ඬ⃟  _${usedPrefix}BUS_
 ┣ ඬ⃟  _${usedPrefix}TURBUS2_
 ┣ ඬ⃟  _${usedPrefix}NUMEROS_
- *╰═══════════════* *✧* 
-┗❀•°•════ஓ๑♡๑ஓ════•°•❀━≫`.trim()
+ *╰═══════════════* *✧* `.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
