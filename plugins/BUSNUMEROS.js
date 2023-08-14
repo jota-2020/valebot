@@ -4,6 +4,6 @@ const message = users.map(v => '👉 wa.me/' + v.jid.replace(/[^0-9]/g, '') + `?
 const replyMessage = (message.length === 0) ? "*Call center 800 370 030*" : message
 await m.reply( '*Call center 800 370 030, Trafico General: wa.me/56995355239   Monitoreo: wa.me/56957592341*')
 await m.reply(replyMessage.trim())}
-handler.command = handler.help = ['num','numeros','ayuda']
+handler.command =['num','numeros','ayuda']
 handler.tags = ['numero']
 export default handler
