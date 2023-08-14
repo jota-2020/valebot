@@ -38,11 +38,9 @@ let str = `*╭━━❍Vale- Bσƚ❍━━╮*
  *┃╰━━━━━━━━━━━━━━━━╾•* 
  *╰━━━╼TURBUS BOT╾━━━╯* 
  *╭━━━━━━━━━━━━━━━━╮*
- *║👤 NOMBRE: ${taguser}* 
- *║🧰 EXPERIENCIA ➟ ${exp}* 
- *║⚓ RANGO ➟* ${role}* 
- *║💎 DIAMANTES ➟ ${limit}* 
- *║💸 DOLARES ➟ ${money}* 
+┣ ඬ⃟  _${usedPrefix}BUS_
+┣ ඬ⃟  _${usedPrefix}TURBUS2_
+┣ ඬ⃟  _${usedPrefix}NUMEROS_
  *╰═══════════════* *✧* 
 ┗❀•°•════ஓ๑♡๑ஓ════•°•❀━≫`.trim()
 if (m.isGroup) {
@@ -56,7 +54,7 @@ conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.mat
 } catch {
 conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
 }}
-handler.command = /^(mnu)$/i
+handler.command = /^(menutb)$/i
 handler.exp = 0
 handler.fail = null
 export default handler
