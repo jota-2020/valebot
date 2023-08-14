@@ -28,8 +28,8 @@ let str = `* ╭━━TURBUS- BOT━━╮*
  *╰━━━╼MENU╾━━━╯* 
  *⋄ Por favor escriba una de las opciones aqui abajo descritas* 
  *╭━━━━━━━━━━━━━━━━╮*
-┣ ඬ⃟  _${usedPrefix}BUS_
-┣ ඬ⃟  _${usedPrefix}TURBUS_
+┣ ඬ⃟  _${usedPrefix}BUS numero de bus_
+┣ ඬ⃟  _${usedPrefix}TURBUS numero de bus_
 ┣ ඬ⃟  _${usedPrefix}NUMEROS_
  *╰═══════════════* *✧* 
 *⋄ ᴄʀᴇᴀᴅᴏʀ ᴅᴇʟ ʙᴏᴛ:  jotah1313* `.trim()
