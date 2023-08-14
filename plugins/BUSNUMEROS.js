@@ -3,7 +3,7 @@ let handler = async (m, { conn, text}) => {
 m.reply(`*╔═══════════════════════════*\n➢ *"${pickRandom(global.piropo)}"*\n*╚═══════════════════════════*`)
 }
 handler.tags = ['frases']
-handler.command = ['numeros|num|numero|trafico|monitoreo|tráfico']
+handler.command = ['numeros','num']
 export default handler
 
 function pickRandom(list) {
