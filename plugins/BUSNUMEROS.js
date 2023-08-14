@@ -1,9 +1,12 @@
-async function handler(m, { usedPrefix }) {
-let users = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]  
-const message = users.map(v => '👉 wa.me/' + v.jid.replace(/[^0-9]/g, '') + `?text=${usedPrefix}estado\n(${v.name})\n\n`).join('\n')
-const replyMessage = (message.length === 0) ? "*Call center 800 370 030*" : message
-await m.reply( '*Call center 800 370 030, Trafico General: wa.me/56995355239   Monitoreo: wa.me/56957592341*')
-await m.reply(replyMessage.trim())}
-handler.command =['num','numeros','ayuda']
-handler.tags = ['numero']
+let handler = async (m, { conn, text}) => {
+
+m.reply(`*╔═══════════════════════════*\n➢ *"${pickRandom(global.piropo)}"*\n*╚═══════════════════════════*`)
+}
+handler.tags = ['frases']
+handler.command = ['numeros']
 export default handler
+
+function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]}
+
+global.piropo = ["CALL CENTER 800 370 030 TRAFICO : wa.me/56995355239 MONITOREO : wa.me/56957592341.", "CALL CENTER 800 370 030 TRAFICO : wa.me/56995355239 MONITOREO : wa.me/56957592341", "CALL CENTER 800 370 030 TRAFICO : wa.me/56995355239 MONITOREO : wa.me/56957592341","CALL CENTER 800 370 030 TRAFICO : wa.me/56995355239 MONITOREO : wa.me/56957592341"]
