@@ -10,7 +10,7 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
 
 global.piropo = ["CALL CENTER 800 370 030
-                TRAFICO : wa.me/56995355239
-                MONITOREO : wa.me/56957592341", "CALL CENTER 800 370 030
+                 TRAFICO : wa.me/56995355239
+  MONITOREO : wa.me/56957592341", "CALL CENTER 800 370 030
                   TRAFICO : wa.me/56995355239
                   MONITOREO : wa.me/56957592341"]
