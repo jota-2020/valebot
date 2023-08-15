@@ -720,10 +720,10 @@ let vn = './media/vamo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (chat.audios && m.text.match(/(:V|v:|V:|v:)/gi)) {    
+/*if (chat.audios && m.text.match(/(:V|v:|V:|v:)/gi)) {    
 let vn = './media/viejo1.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}*/
 
 if (chat.audios && m.text.match(/(No me hables|no me hables)/gi)) {    
 let vn = './media/no me hables.mp3'
