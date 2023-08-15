@@ -27,7 +27,7 @@ let vn = './media/chupa.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
 
-if (!chat.isBanned && chat.audios && m.text.match(/(cigarro|fumo|fumó|fuma)/gi)) {
+if (!chat.isBanned && chat.audios && m.text.match(/(cigarro|fumo|fumó|fuma|🚬)/gi)) {
 let vn = './media/burunya.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
