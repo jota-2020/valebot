@@ -785,10 +785,10 @@ let vn = './media/temon.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (chat.audios && m.text.match(/(trabajo|trabajo)/gi)) {    
+/*if (chat.audios && m.text.match(/(trabajo|trabajo)/gi)) {    
 let vn = './media/trabajo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}*/
 
 if (chat.audios && m.text.match(/(mami yo que digo a ti)/gi)) {    
 let vn = './media/mami yo que digo a ti.mp3'
