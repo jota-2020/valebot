@@ -51,6 +51,11 @@ if (!chat.isBanned && chat.audios && m.text.match(/(chingon|elmo)/gi)) {
 let vn = './media/elmo_es_chingon.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}   
+
+if (!chat.isBanned && chat.audios && m.text.match(/(barriendo|escoba|escova|varriendo|raquel|wisin|yandel|barriendo sin escoba)/gi)) {    
+let vn = './media/Barriendo.mp3'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}   
    
 if (!chat.isBanned && chat.audios && m.text.match(/(dijiste|dijo|dije)/gi)) {    
 let vn = './media/que_dijistes.mp3'
