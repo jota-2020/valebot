@@ -1080,7 +1080,7 @@ let vn = './st/robar.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
 
-if (chat.audios && m.text.match(/(:3|:o|:O|:0|>:3|qwq|awa|ewe|OoO|0o0)/gi)) {    
+if (chat.audios && m.text.match(/(:3|:o|:O|:0|>:3|qwq|awa|ewe|OoO|0o0|OpO|0p0)/gi)) {    
 let vn = './st/emo3.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
