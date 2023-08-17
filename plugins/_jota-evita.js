@@ -1,4 +1,3 @@
-if (command == 'evita') {
 let resError = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/imagenlesbians.json`)).data   
 let res = await conn.getFile(`https://api-fgmods.ddns.net/api/nsfw/lesbian?apikey=fg-dylux`).data
 if (res == '' || !res || res == null) res = await resError[Math.floor(resError.length * Math.random())]  
