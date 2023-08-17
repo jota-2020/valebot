@@ -1,7 +1,9 @@
-import { sticker } from '../lib/sticker.js'
-let handler = m => m
-handler.all = async function (m, { conn }) {
-let chat = global.db.data.chats[m.chat]
+if (command == 'evita') {
+let resError = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/imagenlesbians.json`)).data   
+let res = await conn.getFile(`https://api-fgmods.ddns.net/api/nsfw/lesbian?apikey=fg-dylux`).data
+if (res == '' || !res || res == null) res = await resError[Math.floor(resError.length * Math.random())]  
+conn.sendMessage(m.chat, { image: { url: res }, caption: `_${command}_`.trim() }, { quoted: m })}  
+
 
 let toM = a => '@' + a.split('@')[0]
 function handler(m, { groupMetadata }) {
@@ -12,13 +14,7 @@ do b = ps.getRandom()
 while (b === a)
 m.reply(`*${toM(a)}, LE DIO UN BESO A EVITA PROVOCANDO QUE SE MOJE🥵😏🥵*`, null, {
 mentions: [a, b]
-})}
-
-if (chat.audios && m.text.match(/(eva|evi|darkness|EVI|EVITA)/gi)) {    
-let vn = './st/emo3.webp'
-this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
-  
+})} 
 handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
 handler.command = ['evita','eva','evi','darkness']
