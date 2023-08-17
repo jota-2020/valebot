@@ -10,7 +10,7 @@ if (res == '' || !res || res == null) res = await resError[Math.floor(resError.l
 conn.sendMessage(m.chat, { image: { url: res }, caption: `_${command}_`.trim() }, { quoted: m })}  
 
 
-let toM = a => '@' + a.split('@')[0]
+/*let toM = a => '@' + a.split('@')[0]
 function handler(m, { groupMetadata }) {
 let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
@@ -25,3 +25,4 @@ handler.tags = ['main', 'fun']
 handler.command = ['evita','eva','evi','darkness']
 handler.group = true
 export default handler
+*/
