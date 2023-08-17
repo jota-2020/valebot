@@ -6,7 +6,7 @@ let a = ps.getRandom()
 let b
 do b = ps.getRandom()
 while (b === a)
-m.reply(`*${toM(a)}, DEBERIAS DARLE UNA MAMADA A ${toM2(b)}, DE SEGURO TE LO AGRADECERÁ 😏🥵*`, null, {
+m.reply(`*${toM(a)}, DEBERIAS DARLE UNA MAMADA A ${toM2(b)}, DE SEGURO TE LO AGRADECERÁ 😏🥵 #kiss @56932025033 *`, null, {
 mentions: [a, b]
 })}
 handler.help = ['formarpareja']
