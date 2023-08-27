@@ -13,5 +13,3 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['bot']
 handler.tags = ['fun']
 handler.command = ['bot', 'vale'] 
-
-export default handler
