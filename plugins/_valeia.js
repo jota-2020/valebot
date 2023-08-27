@@ -1,6 +1,13 @@
 import fetch from "node-fetch"
 let handler = async (m, { conn, text }) => {  
-let sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text())
+let user = conn.getName(m.sender)
+  if (!text) throw `✳️ Hola *${user}* Quieres platicar un rato? \nResponde usándo *${usedPrefix + command}* (texto) \n\n📌Ejemplo: *${usedPrefix + command}* Hola Bot`
+  m.react('🗣️') 
+  let res = await fetch(`https://api.simsimi.net/v2/?text=${text}&lc=es`)
+  let json = await res.json()
+  if (json.success) m.reply(json.success.replace('simsimi', 'Metro').replace('Simsimi', 'Metro').replace('sim simi', 'Metro'))
+  else throw json
+}
 
 async function getOpenAIChatCompletion(texto) {
   const openaiAPIKey = global.openai_key
