@@ -5,7 +5,7 @@ let user = conn.getName(m.sender)
   m.react('🗣️') 
   let res = await fetch(`https://api.simsimi.net/v2/?text=${text}&lc=es`)
   let json = await res.json()
-  if (json.success) m.reply(json.success.replace('simsimi', 'Metro').replace('Simsimi', 'Metro').replace('sim simi', 'Metro'))
+  if (json.success) m.reply(json.success.replace('vale', 'valeria').replace('iav', 'valebot').replace('bot', 'vale_ia'))
   else throw json
 }
 
