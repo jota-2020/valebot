@@ -27,7 +27,7 @@ let vn = './media/chupa.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
 
-if (!chat.isBanned && chat.audios && m.text.match(/(cigarro|fumo|fumó|fuma|🚬)/gi)) {
+if (!chat.isBanned && chat.audios && m.text.match(/(cigarro|fumo|fumó|fuma|🚬|burunya|nya|nia)/gi)) {
 let vn = './media/burunya.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
@@ -1092,6 +1092,21 @@ this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt
 
 if (chat.audios && m.text.match(/(:3|:o|:O|:0|>:3|qwq|awa|ewe|OoO|0o0|OpO|0p0)/gi)) {    
 let vn = './st/emo3.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
+
+if (chat.audios && m.text.match(/(bien y tu|bien gracias|biem graciams|tú|Tú)/gi)) {    
+let vn = './st/raw.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
+
+if (chat.audios && m.text.match(/(bot|valebot|BOT|Bot|vale)/gi)) {    
+let vn = './st/vale.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
+
+if (chat.audios && m.text.match(/(lele|duele|me duele|me siento mal|nanai)/gi)) {    
+let vn = './st/nanai.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
     
