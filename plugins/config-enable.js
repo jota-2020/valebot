@@ -2,59 +2,12 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 let optionsFull = `*Opción:* ✨ | WELCOME
 *Comando:* ${usedPrefix + command} welcome
 *Descripción:* Activa o desactiva la bienvenida en el grupo.
-
---------------------------------
-
-*Opción:* 🌎 | MODO PUBLICO
-*Comando:* ${usedPrefix + command} public
-*Descripción:* El Bot se vuelve de uso publico y/o privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
-
---------------------------------
-
-*Opción:* 🥵 | MODO HORNY
-*Comando:* ${usedPrefix + command} modohorny
-*Descripción:* Activa o desactiva los comandos +18 en el grupo.
-
 --------------------------------
 
 *Opción:* 🔗 | ANTILINK
 *Comando:* ${usedPrefix + command} antilink
 *Descripción:* Activa o desactiva el anti-enlaces de WhatsApp.
 *Nota:* Se necesita tener activo el restrict.
-
---------------------------------
-
-*Opción:* 🔗 | ANTILINK 2
-*Comando:* ${usedPrefix + command} antilink2
-*Descripción:* Activa o desactiva el anti-enlaces que inician en HTTPS.
-*Nota:* Se necesita tener activo el restrict.
-
---------------------------------
-
-*Opción:* 🔎 | DETECT
-*Comando:* ${usedPrefix + command} detect
-*Descripción:* Activa o desacriva las notificaciones de cambios en el grupo.
-
---------------------------------
-
-*Opción:* 🔎 | DETECT 2
-*Comando:* ${usedPrefix + command} detect2
-*Descripción:* Detecta modificaciones en el grupo y mantiene una mejor gestion.
-
---------------------------------
-
-*Opción:* ❗ | RESTRICT
-*Comando:* ${usedPrefix + command} restrict
-*Descripción:* Activa o desactiva las restricciones del Bot, como la de sacar o agregar personas a un grupo.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
-
---------------------------------
-
-*Opción:* ☑️ | AUTOREAD
-*Comando:* ${usedPrefix + command} autoread
-*Descripción:* Marca como leido los mensajes y los estados automáticamente.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
 
 --------------------------------
 
@@ -67,13 +20,6 @@ let optionsFull = `*Opción:* ✨ | WELCOME
 *Opción:* 👾 | AUTOSTICKER
 *Comando:* ${usedPrefix + command} autosticker 
 *Descripción:* Todas las imagenes o videos enviados en el grupo se convierten en stickers. 
-
---------------------------------
-
-*Opción:* 💬 | PCONLY
-*Comando:* ${usedPrefix + command} pconly
-*Descripción:* El Bot solo responderá a los comandos si es un chat privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
 
 --------------------------------
 
@@ -90,34 +36,6 @@ let optionsFull = `*Opción:* ✨ | WELCOME
 
 --------------------------------
 
-*Opción:* 📵 | ANTILLAMADAS
-*Comando:* ${usedPrefix + command} anticall
-*Descripción:* El Bot bloquerá a las personas que llamen al Bot. 
-*Nota:* Este comando solo podra ser usado por owners del Bot.
-
---------------------------------
-
-*Opción:* 💬 | ANTIPRIVADO
-*Comando:* ${usedPrefix + command} antiprivado
-*Descripción:* El Bot bloquerá a las personas que escriban al privado del Bot. 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
-
---------------------------------
-
-*Opción:* 🤬 | ANTITOXIC
-*Comando:* ${usedPrefix + command} antitoxic
-*Descripción:* Detecta la malas palabras y advierte al participante del grupo, antes de ser eliminado.
-*Nota:* Se necesita tener activo el restrict.
-
---------------------------------
-
-*Opción:* 🕸️ | ANTITRABAS
-*Comando:* ${usedPrefix + command} antitraba
-*Descripción:* El Bot detecta textos largos que podrian ser virus y causar lag en el chat y elimina al usuario.
-*Nota:* Se necesita tener activo el restrict.
-
---------------------------------
-
 *Opción:* 👎 | ANTIARABES
 *Comando:* ${usedPrefix + command} antiarabes
 *Descripción:* Si un numero árabe se uné al grupo, el Bot lo elimina automaticamente.
@@ -125,29 +43,16 @@ let optionsFull = `*Opción:* ✨ | WELCOME
 
 --------------------------------
 
-*Opción:* 👎 | ANTIARABES 2
-*Comando:* ${usedPrefix + command} antiarabes2
-*Descripción:* Si un numero árabe escribe en el grupo, el Bot lo elimina automaticamente.
+*Opción:* 👎 | ANTIPERUANOS
+*Comando:* ${usedPrefix + command} antiperu
+*Descripción:* Si un numero de Perú escribe en el grupo, el Bot lo elimina automaticamente.
 *Nota:* Se necesita tener activo el restrict.
-
---------------------------------
-
-*Opción:* 🤖 | MODEJADIBOT
-*Comando:* ${usedPrefix + command} modejadibot
-*Descripción:* Activa o desactiva el uso del comando para sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot). 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
 
 --------------------------------
 
 *Opción:* 👑 | MODOADMIN
 *Comando:* ${usedPrefix + command} modoadmin
 *Descripción:* El Bot solo responderá a los admins del grupo.
-
---------------------------------
-
-*Opción:* 😃 | SIMSIMI
-*Comando:* ${usedPrefix + command} simsimi
-*Descripción:* El Bot empezará a responder a los mensajes usando la IA de SimSimi.
 
 --------------------------------
 
@@ -401,6 +306,14 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
+chat.antiperu = isEnable
+break
+case 'antiperu':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
 chat.antiArab = isEnable  
 break
 case 'antiarabes2':
@@ -409,6 +322,7 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
+
 chat.antiArab2 = isEnable  
 break    
 default:
