@@ -10,6 +10,6 @@ m.reply(`*[❗] ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ ɴᴏ sᴇ ᴘᴇʀᴍɪᴛᴇɴ 
 let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 if (responseb[0].status === "404") return 
 }
-  
+   
 }}
 export default handler
