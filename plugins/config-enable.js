@@ -3,6 +3,7 @@ let optionsFull = `*Opción:* ✨ | WELCOME
 *Comando:* ${usedPrefix + command} welcome
 *Descripción:* Activa o desactiva la bienvenida en el grupo.
 --------------------------------
+Estos comandos solo pueden ser utilizados por @56932025033 , @56945934391 o @jotah1313
 
 *Opción:* 🔗 | ANTILINK
 *Comando:* ${usedPrefix + command} antilink
@@ -20,13 +21,6 @@ let optionsFull = `*Opción:* ✨ | WELCOME
 *Opción:* 👾 | AUTOSTICKER
 *Comando:* ${usedPrefix + command} autosticker 
 *Descripción:* Todas las imagenes o videos enviados en el grupo se convierten en stickers. 
-
---------------------------------
-
-*Opción:* 🏢 | GCONLY
-*Comando:* ${usedPrefix + command} gconly
-*Descripción:* El Bot solo respondera a los comandos si es un grupo. 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
 
 --------------------------------
 
