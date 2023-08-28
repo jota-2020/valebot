@@ -44,7 +44,7 @@ let optionsFull = `*Opción:* ✨ | WELCOME
 --------------------------------
 
 *Opción:* 👎 | ANTIPERUANOS
-*Comando:* ${usedPrefix + command} antiperu
+*Comando:* ${usedPrefix + command} antipe
 *Descripción:* Si un numero de Perú escribe en el grupo, el Bot lo elimina automaticamente.
 *Nota:* Se necesita tener activo el restrict.
 
@@ -306,9 +306,9 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
-chat.antiperu = isEnable
+chat.antipe = isEnable
 break
-case 'antiperu':
+case 'antipe':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
