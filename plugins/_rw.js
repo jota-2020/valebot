@@ -5,9 +5,7 @@ let a = ps.getRandom()
 let b
 do b = ps.getRandom()
 while (b === a)
-m.reply(`#rw`, null, {
-mentions: [a, b]
-})}
+m.reply(`#rw`})}
 handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
 handler.command = ['rw','rollwaifu']
