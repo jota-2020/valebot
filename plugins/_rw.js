@@ -1,7 +1,8 @@
 let toM = a => '@' + a.split('@')[0]
+let user = global.db.data.users[m.sender]
 function handler(m, { groupMetadata }) {
 let ps = groupMetadata.participants.map(v => v.id)
-let a = ps.getRandom()
+let a = ps.${taguser}
 let b
 do b = ps.getRandom()
 while (b === a)
