@@ -38,7 +38,7 @@ m.reply(botIA222.data.choices[0].text.trim())
 } catch {
 try {
 conn.sendPresenceUpdate('composing', m.chat)    
-let akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${text}`)
+let akuariapi1 = await fetch(`https://api.azz.biz/ai/gbard?chat=${text}`)
 let akuariapijson1 = await akuariapi1.json()
 if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD //causar error undefined para usar otra api 
 let akuariapiresult1 = await translate(`${akuariapijson1.respon}`, { to: 'es', autoCorrect: true })
