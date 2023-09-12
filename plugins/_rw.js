@@ -11,3 +11,13 @@ handler.tags = ['main', 'fun']
 handler.command = ['rw','rollwaifu']
 handler.group = true
 export default handler*/
+
+let handler = async (m, { conn }) => {
+if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
+let vn = './media/a.mp3'
+m.reply(`#rw`})}
+conn.sendPresenceUpdate('recording', m.chat)
+conn.sendMessage(m.chat, { audio: { url: vn }, seconds: '1934.4', ptt: true, mimetype: 'audio/mpeg', fileName: `a.mp3` }, { quoted: m })}
+handler.customPrefix = /prueba/
+handler.command = /^(prueba)/
+export default handler
