@@ -3,9 +3,6 @@ let user = global.db.data.users[m.sender]
 function handler(m, { groupMetadata }) {
 let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.${taguser}
-let b
-do b = ps.getRandom()
-while (b === a)
 m.reply(`*${toM(a)} ,Suerte!!*`)}
 handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
