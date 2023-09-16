@@ -8,6 +8,8 @@ let vn = './src/cl.m3u
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, { document: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
 
+return !0 }
+export default handler*/
 
 
   
