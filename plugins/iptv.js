@@ -1,9 +1,12 @@
-let handler = async (m, { conn }) => {
-if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
-let vn = './media/cl.mp3'
-conn.sendPresenceUpdate('recording', m.chat)
-conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype: 'audio/mpeg', fileName: `cl.m3u` }, { quoted: m })}
-handler.customPrefix = /Iptv|iptv/
-handler.command = /^(Iptv|iptv?$)/
-export default handler
-
+let toM = a => '@' + a.split('@')[0]
+function handler(m, { groupMetadata }) {
+let ps = groupMetadata.participants.map(v => v.id)
+let a = ps.getRandom()
+let b
+do b = ps.getRandom()
+while (b === a)
+m.reply(`https://github.com/jota-2020/valebot/blob/main/src/cl.m3u`)}
+handler.help = ['formarpareja']
+handler.tags = ['main', 'fun']
+handler.command = ['Iptv','iptv']
+handler.group = true
