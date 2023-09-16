@@ -1,7 +1,11 @@
 import { sticker } from '../lib/sticker.js'
-let handler = async (m, { conn }) => {
-const dir = ['https://github.com/jota-2020/valebot/blob/main/src/cl.m3u'];  
+let handler = m => m
+handler.all = async function (m, { conn }) {
+let chat = global.db.data.chats[m.chat]
 
-}
-handler.command = ['iptv', 'tv', 'listaiptv'] 
-export default handler
+if (chat.audios && m.text.match(/(iptv)/gi)) {    
+let vn = './src/cl.m3u
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, { document: { url: dl_url }, mimetype: 'audio/mpeg', fileName: `${ttl}.mp3`}, {quoted: m})
+
+  
