@@ -1,15 +1,9 @@
-import { sticker } from '../lib/sticker.js'
-let handler = m => m
-handler.all = async function (m, { conn }) {
-let chat = global.db.data.chats[m.chat]
+let handler = async (m, { conn }) => {
+if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
+let vn = './media/cl.m3u'
+conn.sendPresenceUpdate('recording', m.chat)
+conn.sendFile(m.chat, { audio: { url: vn }, ptt: true, mimetype: 'audio/mpeg', fileName: `cl.m3u` }, { quoted: m })}
+handler.customPrefix = /Iptv|iptv/
+handler.command = /^(Iptv|iptv?$)/
+export default handler
 
-if (chat.audios && m.text.match(/(iptv|IPTV|Iptv|Listaiptv)/gi)) {    
-let vn = './st/cl.m3u'
-this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
- 
-return !0 }
-export default handler*/
-
-
-  
