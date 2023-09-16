@@ -3,11 +3,11 @@ let handler = m => m
 handler.all = async function (m, { conn }) {
 let chat = global.db.data.chats[m.chat]
 
-if (chat.audios && m.text.match(/(iptv|listaiptv|tv|cable)/gi)) {    
-let vn = './src/cl.m3u'
+if (chat.audios && m.text.match(/(lele|duele|me duele|me siento mal|nanai)/gi)) {    
+let vn = './st/cl.m3u'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, { document: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
-
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})} 
+ 
 return !0 }
 export default handler*/
 
