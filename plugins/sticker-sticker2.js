@@ -24,7 +24,7 @@ if (/webp/g.test(mime)) out = await webp2png(img)
 else if (/image/g.test(mime)) out = await uploadImage(img)
 else if (/video/g.test(mime)) out = await uploadFile(img)
 if (typeof out !== 'string') out = await uploadImage(img)
-stiker = await sticker(false, out, global.packname, global.author)
+stiker = await conn.sendFile(m.chat, out, 'error.png', null, m)
 }}
 } else if (args[0]) {
 if (isUrl(args[0])) stiker = await conn.sendFile(m.chat, out, 'error.png', null, m)
