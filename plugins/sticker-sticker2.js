@@ -15,7 +15,7 @@ if (!img) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰
 let out
 try {
 stiker = await conn.sendFile(m.chat, false, 'error.png', null, m)
-img = sticker
+
 /*} catch (e) {
 console.error(e)
 } finally {
