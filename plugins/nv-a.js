@@ -5,6 +5,12 @@ conn.sendPresenceUpdate('recording', m.chat)
 conn.sendMessage(m.chat, { audio: { url: vn }, seconds: '1934.4', ptt: true, mimetype: 'audio/mpeg', fileName: `a.mp3` }, { quoted: m })}
 handler.customPrefix = /ª|a|A/
 handler.command = /^(a|ª|A?$)/
+
+if (chat.audios && m.text.match(/(Muchacho|MUCHACHO|COMO ESTA|COMO ESTAN|Cómo tan|Como estan|Como estan muchacho)/gi)) {    
+let vn = './media/como-tan.mp3'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
 export default handler
 
 /*
