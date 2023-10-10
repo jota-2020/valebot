@@ -7,7 +7,6 @@ import {unwatchFile, watchFile} from 'fs';
 import fs from 'fs';
 import chalk from 'chalk';
 import mddd5 from 'md5';
-img=img
 /**
  * @type {import('@whiskeysockets/baileys')}
  */
