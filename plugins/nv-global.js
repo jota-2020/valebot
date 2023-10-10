@@ -159,7 +159,7 @@ this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt
     
 /*AAAAAAAAAAAAA*/
 
-    if (chat.audios && m.text.match(/(Muchacho|MUCHACHO|COMO ESTA|COMO ESTAN|💥|☘️|⭐)/gi)) {    
+    if (chat.audios && m.text.match(/(Muchacho|MUCHACHO|COMO ESTA|COMO ESTAN|Cómo tan|Como estan|Como estan muchacho)/gi)) {    
 let vn = './media/como-tan.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
