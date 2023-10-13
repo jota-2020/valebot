@@ -12,7 +12,7 @@ let vn = './media/awebo.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}    
 
-if (/^chupa chupa hijo la gran puta| chupa|Chupa|chupamela|chupamelo|chupalo|chupala|hasta que me explote el huevo$/i.test(m.text) && chat.audios && !chat.isBanned) {
+if (/^chupa chupa hijo la gran puta| chupa|Chupa|chupamela|chupamelo|chupalo|chupala|hasta que me explote el huevo$/i.test(m.text) && chat.audios && !chat.isned) {
 let vn = './media/(43) WhatsApp.mhtml'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}  
@@ -250,7 +250,7 @@ let vn = './media/insultar.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}   
     
-if (chat.audios && m.text.match(/(baneado|Baneado|ban|baneada|🤫)/gi)) {    
+if (chat.audios && m.text.match(/(baneado|Baneado|baneada|🤫)/gi)) {    
 let vn = './media/baneado.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
