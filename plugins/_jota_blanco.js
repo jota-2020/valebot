@@ -1,7 +1,7 @@
 let handler = async(m, { conn, text, command }) => {
 let yh = global.loli
 let url = yh[Math.floor(Math.random() * yh.length)]
-conn.sendMessage(m.chat, { image: { url: url }, caption: "Dark_vale" }, { quoted: m });
+conn.sendMessage(m.chat, { image: { url: url }, caption: "white_vale" }, { quoted: m });
 }
 handler.command = /^(blanco)$/i
 handler.tags = ['anime']
