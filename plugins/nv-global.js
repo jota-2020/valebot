@@ -17,10 +17,10 @@ let vn = './media/(43) WhatsApp.mhtml'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}  
 
-if (!chat.isBanned && chat.audios && m.text.match(/(callate la boca|callate|sh|shhh|no estoy hablando|silencio)/gi)) {
+/*if (!chat.isBanned && chat.audios && m.text.match(/(callate la boca|callate|sh|shhh|no estoy hablando|silencio)/gi)) {
 let vn = './media/callate la boca.opus'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
+this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}*/
 
 if (!chat.isBanned && chat.audios && m.text.match(/(chupa)/gi)) {
 let vn = './media/chupa.m4a'
