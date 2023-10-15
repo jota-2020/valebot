@@ -10,7 +10,7 @@ let love = `*Shipeados*
 let url = yh[Math.floor(Math.random() * yh.length)]
 conn.sendMessage(m.chat, { image: { url: url }, love}, { quoted: m });
 }
-handler.command = /^(ship)$/i
+handler.command = /^(shipp)$/i
 handler.tags = ['anime']
 handler.help = ['loli']
 export default handler
