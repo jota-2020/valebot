@@ -1,7 +1,7 @@
 let handler = async(m, { conn, text, command }) => {
 let yh = global.ship
 let url = yh[Math.floor(Math.random() * yh.length)]
-conn.sendMessage(m.chat, { image: { url: url }, caption: "❤️La compatibilidad es de un ${Math.floor(Math.random() * 100)}%*" }, { quoted: m });
+conn.sendMessage(m.chat, { image: { url: url }, caption: "❤️La compatibilidad es de un"+${Math.floor(Math.random() * 100)}%*" }, { quoted: m });
 }
 handler.command = /^(shop)$/i
 handler.tags = ['anime']
