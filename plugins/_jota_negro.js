@@ -13,5 +13,8 @@ global.negro = [
 "https://telegra.ph/file/e3350a4c61119a6a62519.jpg",
 "https://telegra.ph/file/3fe53f57440ac1385b5ca.jpg",
 "https://telegra.ph/file/c08951881762770a0cd77.jpg",
+"https://telegra.ph/file/78a919cbec9f1324aa0e8.jpg",
+"https://telegra.ph/file/40e5bb09bbdab8d72a4b3.jpg",
+"https://telegra.ph/file/8ff378b274ecdd5bccac4.jpg",
 
 ]
