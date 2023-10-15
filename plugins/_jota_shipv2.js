@@ -1,13 +1,9 @@
 let handler = async(m, { conn, text, command }) => {
 let yh = global.ship
 let url = yh[Math.floor(Math.random() * yh.length)]
-conn.sendMessage(m.chat, { image: { url: url }, caption: "*Shipeados*
-=
-*❤️El nombre del ship es ${text}*
-=
-*❤️La compatibilidad es de un ${Math.floor(Math.random() * 100)}%*" }, { quoted: m });
+conn.sendMessage(m.chat, { image: { url: url }, caption: "❤️La compatibilidad es de un ${Math.floor(Math.random() * 100)}%*" }, { quoted: m });
 }
-handler.command = /^(ship2)$/i
+handler.command = /^(shop)$/i
 handler.tags = ['anime']
 handler.help = ['loli']
 export default handler
