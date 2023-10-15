@@ -1,6 +1,6 @@
-let handler = async (m, { conn, command, text, text2 }) => {
+let handler = async (m, { conn, command, text, }) => {
 let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
-*El amor de ${text} por ${text2} es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
+*El amor de ${text} por ${mentions} es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
 
 `.trim()
 m.reply(love, null, { mentions: conn.parseMention(love) })}
